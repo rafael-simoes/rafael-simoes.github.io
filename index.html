@@ -181,6 +181,32 @@
       top: 15px;
     }
 
+    .card-body__tools-title {
+      font-size: 1rem;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .card-body__tools-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    .card-body__tools-list li {
+      display: inline-block;
+      margin-right: .5rem;
+    }
+
+    .card-body__tools-list li + li::before{
+      margin-right: .5rem;
+    }
+
+    .card-body__tools-list__image {
+      height: 24px;
+      object-fit: cover;
+    }
+
+
     @keyframes animatePulse {
       0% {
         transform: scale(0.6);
@@ -430,18 +456,27 @@
           <div class="card-header my-projects__list__name" id="fourthProject">
             <h2 class="mb-0">
               <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse4"
-                aria-expanded="false" aria-controls="collapse4">
+                aria-expanded="true" aria-controls="collapse4">
                 Bathmato - OUTSYSTEMS
               </button>
             </h2>
           </div>
-          <div id="collapse4" class="collapse" aria-labelledby="fourthProject">
+          <div id="collapse4" class="collapse show" aria-labelledby="fourthProject">
             <div class="card-body">
               Developed in OutSystems, Bathmato is an app where you can create a new post or just check the content, and
               if you have an account, then you can upload photos, comment and rate it.
               Work in progress.
               <div>
               </div>
+              <div class="card-body__tools-title">Tools</div>
+              <ul class="card-body__tools-list">
+                <li> <img class="card-body__tools-list__image" src="https://i.imgur.com/QIGXvs5.png"
+                  alt="outsystems"></li>
+                <li> <img class="card-body__tools-list__image" src="https://i.imgur.com/srDMCDH.png"
+                  alt="ilustrator"></li>
+                <li> <img class="card-body__tools-list__image" src="https://i.imgur.com/fWayAtF.png"
+                  alt="photoshop"></li>
+              </ul>
             </div>
           </div>
         </div>
@@ -470,6 +505,15 @@
                 <img id="myImg" class="my-projects__list__image" src="https://i.imgur.com/D3IpTc3.jpg"
                   alt="Details Screen">
               </div>
+              <div class="card-body__tools-title">Tools</div>
+              <ul class="card-body__tools-list">
+                <li> <img class="card-body__tools-list__image" src="https://i.imgur.com/QIGXvs5.png"
+                  alt="outsystems"></li>
+                <li> <img class="card-body__tools-list__image" src="https://i.imgur.com/srDMCDH.png"
+                  alt="ilustrator"></li>
+                <li> <img class="card-body__tools-list__image" src="https://i.imgur.com/fWayAtF.png"
+                  alt="photoshop"></li>
+              </ul>
             </div>
           </div>
         </div>
@@ -493,6 +537,15 @@
                 <img id="myImg" class="my-projects__list__image" src="https://i.imgur.com/DrtpfdU.gif"
                   alt="Gameplay VS AI">
               </div>
+              <div class="card-body__tools-title">Tools</div>
+              <ul class="card-body__tools-list">
+                <li> <img class="card-body__tools-list__image" src="https://i.imgur.com/LI0Wfmq.png"
+                  alt="android studio"></li>
+                <li> <img class="card-body__tools-list__image" src="https://i.imgur.com/CakbvIj.png"
+                  alt="kotlin"></li>
+                  <li> <img class="card-body__tools-list__image" src="https://i.imgur.com/srDMCDH.png"
+                    alt="ilustrator"></li>
+              </ul>
             </div>
           </div>
         </div>
@@ -501,12 +554,12 @@
           <div class="card-header my-projects__list__name" id="firstProject">
             <h2 class="mb-0">
               <button class="btn btn-link my-projects__list__item__name" type="button" data-toggle="collapse"
-                data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                data-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
                 Calculator - KOTLIN
               </button>
             </h2>
           </div>
-          <div id="collapse1" class="collapse show" aria-labelledby="firstProject">
+          <div id="collapse1" class="collapse" aria-labelledby="firstProject">
             <div class="card-body">
               A simple calculator, developed in Android Studio using Kotlin.
               <div class="my-projects__list__image-container">
@@ -515,10 +568,16 @@
                 <img id="myImg" class="my-projects__list__image" src="https://i.imgur.com/IhLJjwn.png"
                   alt="Landscape Mode Calculator">
               </div>
+              <div class="card-body__tools-title">Tools</div>
+              <ul class="card-body__tools-list">
+                <li> <img class="card-body__tools-list__image" src="https://i.imgur.com/LI0Wfmq.png"
+                  alt="android studio"></li>
+                <li> <img class="card-body__tools-list__image" src="https://i.imgur.com/CakbvIj.png"
+                  alt="kotlin"></li>
+              </ul>
             </div>
           </div>
         </div>
-
       </div>
     </div>
   </div>
